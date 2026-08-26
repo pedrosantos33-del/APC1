@@ -1,15 +1,12 @@
 #include <stdio.h>
 
+int contador = 10;
+
 int main() {
-    int idade = 27;
-    float altura = 1.73;
-    char inicial = 'P';
-    int aprovado = 1;
+    int contador = 5;
 
-    printf("Idade: %d anos\n", idade);
-    printf("Altura: %.2f metros\n", altura);
-    printf("Inicial do nome: %c\n", inicial);
-    printf("Aprovado: %d\n", aprovado);
-
+    printf("valor do contador local: %d\n", contador);
+    //a variavel local tem prioridade sobre a global, então o valor impresso será 5
+    
     return 0;
 }
