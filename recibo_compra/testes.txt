@@ -1,0 +1,50 @@
+CENARIO 1
+
+ENTRADA:
+
+Nome: Pedro Henrique Vieira dos Santos
+Nome do produto: RTX 5090 32 GB
+Codigo:848357348957837
+Quantidade do produto: 5
+Preco unitario do produto: 1.99
+Total: 9.95
+Categoria do produto: A
+
+
+SAIDA: 
+
+========================================
+          RECIBO DE COMPRA
+========================================
+Nome do cliente: Pedro Henrique Vieira dos Santos
+Nome do produto: RTX 5090 32 GB
+Codigo do produto: 848357348957837
+Quantidade do produto: 5
+Preco unitario do produto: 1.99
+Total: 9.95
+Categoria do produto: A
+
+CENARIO 2
+
+ENTRADA:
+
+Nome do cliente: Pedro Henrique Vieira dos Santos
+Nome do produto: AMD Ryzen 9 9950x3d
+Codigo do produto: 33333333333
+Quantidade do produto: 9
+Preco unitario do produto: 9999.99
+Total: 89999.91
+Categoria do produto: A
+
+SAIDA:
+
+========================================
+          RECIBO DE COMPRA
+========================================
+Nome do cliente: Pedro Henrique Vieira dos Santos
+Nome do produto: AMD Ryzen 9 9950x3d
+Codigo do produto: 33333333333
+Quantidade do produto: 9
+Preco unitario do produto: 9999.99
+Total: 89999.91
+Categoria do produto: A
