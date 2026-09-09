@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Define os valores fixos para refeicoes e cafes
 #define VALOR_REFEICAO 12.50
 #define VALOR_CAFE 4.00
 
@@ -21,6 +22,7 @@ scanf("%d", &refeicoes);
 printf("Digite a quantidade de cafes: ");
 scanf("%d", &cafes);
 
+// Calcula os gastos com refeicoes e cafes, o total, o saldo restante e o percentual utilizado
 gastoRefeicoes = refeicoes * VALOR_REFEICAO;
 gastoCafes = cafes * VALOR_CAFE;
 total = gastoRefeicoes + gastoCafes;
@@ -30,6 +32,7 @@ scanf("%f", &disponivel);
 
 saldo = disponivel - total;
 
+// Calcula o percentual utilizado em relação ao valor disponivel
 percentual = (total / disponivel) * 100;
 
 printf("Gasto com refeicoes: R$ %.2f\n", gastoRefeicoes);
