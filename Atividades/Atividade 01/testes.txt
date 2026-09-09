@@ -1,0 +1,34 @@
+CENARIO 1
+
+ENTRADA:
+
+Quantidade de refeições: 5
+Quantidade de cafes: 9
+valor disponivel do cartao: 324.35
+
+
+
+SAIDA:
+
+Gasto com refeicoes: R$ 62.50
+Gasto com cafes: R$ 36.00
+Gasto total: R$ 98.50
+Saldo restante: R$ 225.85
+Percentual utilizado: 30.37%
+
+
+CENARIO 2
+
+ENTRADA:
+
+Quantidade de refeicoes: 17
+Quantidade de cafes: 30
+Valor disponivel no cartao: 333.33
+
+SAIDA:
+
+Gasto com refeicoes: R$ 212.50
+Gasto com cafes: R$ 120.00
+Gasto total: R$ 332.50
+Saldo restante: R$ 0.83
+Percentual utilizado: 99.75%
