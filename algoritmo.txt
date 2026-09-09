@@ -1,0 +1,29 @@
+INÍCIO
+
+```
+Definir VALOR_REFEICAO = 12,50
+Definir VALOR_CAFE = 4,00
+
+Ler quantidade de refeições
+Ler quantidade de cafés
+
+Calcular gasto com refeições
+Calcular gasto com cafés
+Calcular gasto total
+
+Ler valor disponível no cartão
+
+Calcular saldo restante
+Calcular percentual do cartão utilizado
+
+Exibir gasto com refeições
+Exibir gasto com cafés
+Exibir gasto total
+Exibir saldo restante
+Exibir percentual utilizado
+
+Se o saldo for negativo
+    Exibir aviso de saldo negativo
+```
+
+FIM
