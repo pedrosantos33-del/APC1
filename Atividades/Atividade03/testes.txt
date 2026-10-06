@@ -1,0 +1,41 @@
+TESTE 1 - Faixa A com média alta e pagamento pontual
+Entrada:
+Nome: Ana Maria Silva
+Idade: 20
+Renda: 1800
+Média: 8.8
+Status: S
+
+Resultado esperado:
+Faixa A - Baixa Renda
+Desconto Base: 50.0%
+Bônus Pontual: 5.0%
+Desconto Total: 55.0%
+Status : APROVADO PARA BOLSA
+
+
+TESTE 2 - Faixa B com média baixa e pagamento não pontual
+Entrada:
+Nome: João Silva
+Idade: 25
+Renda: 3500
+Média: 8.0
+Status: N
+
+Resultado esperado:
+Faixa B - Média Renda
+Desconto Base: 10.0%
+Bônus Pontual: 0.0%
+Desconto Total: 10.0%
+Status : APROVADO PARA BOLSA
+
+TESTE 3 - Dados inválidos
+Entrada:
+Nome: Carlos Souza
+Idade: 15
+Renda: 2500
+Média: 7.5
+Status: S
+
+Resultado esperado:
+Erro: idade ou renda inválida.
