@@ -1,3 +1,11 @@
+//O fall-through consciente foi mais vantajoso no switch de serviços,
+//nos casos 1, 2 e 3, e nos casos 4 e 5, pois evitou repetir
+//os mesmos blocos de categoria, prazo e taxa.
+//O switch não substitui o if-else-if na classificação por faixas
+//de renda porque trabalha com valores específicos e constantes,
+//enquanto o if-else-if permite comparar intervalos usando operadores relacionais, como <, >, <= e >=.
+
+
 #include <stdio.h>
 #include <string.h>
 const char *nomes_servicos[7] = {
@@ -28,8 +36,14 @@ char nome_dia[30];
 char expediente[20];
 float taxa_final;
 
+
+printf("Digite o codigo do servico (1 a 6): ");
 scanf("%d", &codigo_servico);
+
+printf("Digite a prioridade (U, N ou B): ");
 scanf(" %c", &prioridade);
+
+printf("Digite o dia da semana (1 a 7): ");
 scanf("%d", &dia_semana);
 
 
