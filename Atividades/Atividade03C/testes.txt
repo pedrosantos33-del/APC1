@@ -1,0 +1,170 @@
+TESTES - PAINEL DE SENHAS
+========================
+
+
+Instruções
+----------
+Execute o programa e digite os valores indicados quando cada prompt aparecer.
+Depois de cada opção, o menu deve voltar a aparecer. Digite 0 no menu para
+encerrar o programa.
+
+TESTE 1 - OPÇÃO 1: PRIMEIRA SENHA IGUAL A ZERO
+----------------------------------------------
+No menu, digite:
+1
+
+Quando solicitar as senhas, digite:
+0
+
+Saída esperada:
+Atendidas : 0
+Ignoradas : 0
+Pares     : 0
+
+Objetivo: verificar que o while não executa nenhuma vez quando a primeira
+senha é 0.
+
+TESTE 2 - OPÇÃO 1: SEQUÊNCIA 4, -2, 7, 8, 0
+-------------------------------------------
+No menu, digite:
+1
+
+Digite as senhas nesta ordem:
+4
+-2
+7
+8
+0
+
+Saída esperada:
+Atendidas : 3
+Ignoradas : 1
+Pares     : 2
+
+Objetivo: 4, 7 e 8 são atendidas; -2 é ignorada; 4 e 8 são pares.
+O zero encerra o lote e não entra na contagem.
+
+TESTE 3 - OPÇÃO 2: PASSO POSITIVO
+---------------------------------
+No menu, digite:
+2
+
+Informe:
+Inicio: 2
+Fim: 10
+Passo: 2
+
+Saída esperada:
+Chamadas: 2 4 6 8 10
+
+Objetivo: verificar a sequência crescente com passo 2.
+
+TESTE 4 - OPÇÃO 2: PASSO NEGATIVO
+---------------------------------
+No menu, digite:
+2
+
+Informe:
+Inicio: 10
+Fim: 1
+Passo: -3
+
+Saída esperada:
+Chamadas: 10 7 4 1
+
+Objetivo: verificar a sequência decrescente com passo -3.
+
+TESTE 5 - OPÇÃO 2: PASSO ZERO
+-----------------------------
+No menu, digite:
+2
+
+Informe:
+Inicio: 2
+Fim: 10
+Passo: 0
+
+Saída esperada:
+Passo invalido
+
+Objetivo: verificar que nenhum for é executado quando o passo é 0.
+
+TESTE 6 - OPÇÃO 3: GRADE VÁLIDA
+-------------------------------
+No menu, digite:
+3
+
+Informe:
+Guiches (1 a 4): 2
+Senhas por guiche (1 a 5): 3
+
+Saída esperada:
+Guiche 1: 1 2 3
+Guiche 2: 1 2 3
+
+Objetivo: verificar os dois for aninhados e a reinicialização da numeração
+das senhas em cada guichê.
+
+TESTE 7 - OPÇÃO 4: ENCONTRAR SENHA PRIORITÁRIA
+----------------------------------------------
+No menu, digite:
+4
+
+Quando solicitar as senhas, digite:
+4
+7
+20
+
+Saída esperada:
+Prioritaria : 20
+Lidas antes : 2
+
+Objetivo: verificar que a senha prioritária positiva múltipla de 10 é
+encontrada e que apenas as duas senhas anteriores entram na contagem.
+
+TESTE 8 - OPÇÃO 4: PRIORITÁRIA NÃO ENCONTRADA
+---------------------------------------------
+No menu, digite:
+4
+
+Quando solicitar as senhas, digite:
+3
+5
+0
+
+Saída esperada:
+Nao encontrada
+Lidas : 2
+
+Objetivo: verificar que o zero encerra a busca, não é contado e não é
+considerado senha prioritária.
+
+TESTE 9 - OPÇÃO 3: GRADE INVÁLIDA
+--------------------------------
+No menu, digite:
+3
+
+Exemplo de valores inválidos:
+Guiches (1 a 4): 5
+Senhas por guiche (1 a 5): 3
+
+Saída esperada:
+Grade invalida
+
+Objetivo: verificar que uma grade fora dos limites não é impressa.
+
+TESTE 10 - ENCERRAR O PROGRAMA
+------------------------------
+Quando o menu aparecer, digite:
+0
+
+Saída esperada:
+Painel encerrado.
+
+Objetivo: verificar que o programa termina ao escolher a opção 0.
+
+Observação
+----------
+Os textos digitados nos prompts podem aparecer na mesma linha que o prompt.
+O importante é que os resultados e as contagens coincidam com as saídas
+esperadas.
