@@ -9,6 +9,7 @@ mesmo após encontrar uma prioritária ou receber zero.
 */
 
 
+
 #include <stdio.h>
 
 int main() {
