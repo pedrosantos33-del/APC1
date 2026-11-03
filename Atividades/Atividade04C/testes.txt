@@ -1,0 +1,76 @@
+EXECUCAO DOS TESTES
+As entradas abaixo foram fornecidas em uma unica execucao, percorrendo as opcoes 1, 2, 3, 4 e 0.
+
+TESTE 1 - CADASTRAR LISTA DE ALUNOS
+Opcao escolhida: 1
+Entradas:
+  Ana Maria
+  Bruno Costa
+  Carla Souza
+  Diego Lima
+  Eduarda Alves
+
+Resultado exibido:
+===== LISTA DE ALUNOS =====
+1 - Ana Maria
+2 - Bruno Costa
+3 - Carla Souza
+4 - Diego Lima
+5 - Eduarda Alves
+
+Verificacao: aprovado. Os cinco nomes foram lidos e exibidos corretamente, incluindo nomes com espacos.
+
+TESTE 2 - ESTATISTICAS DE DESEMPENHO
+Opcao escolhida: 2
+Notas informadas: 7, 8, 9, 6, 10
+Calculo esperado: (7 + 8 + 9 + 6 + 10) / 5 = 8,00
+Notas maiores ou iguais a media: 8, 9 e 10 (3 alunos)
+
+Resultado exibido:
+Media geral da turma: 8.00
+Alunos com nota maior ou igual a media: 3
+
+Verificacao: aprovado. A media e a quantidade de alunos correspondem ao calculo esperado.
+
+TESTE 3 - MATRIZ DE NOTAS DA TURMA
+Opcao escolhida: 3
+Notas informadas:
+  Aluno 1: 8, 7, 9, 6
+  Aluno 2: 5, 8, 7, 9
+  Aluno 3: 10, 9, 8, 7
+
+Resultado exibido:
+Aluno   1 BIM   2 BIM   3 BIM   4 BIM   Media
+1       8.00    7.00    9.00    6.00    7.50
+2       5.00    8.00    7.00    9.00    7.25
+3       10.00   9.00    8.00    7.00    8.50
+
+Verificacao: aprovado. As 12 notas foram organizadas em 3 linhas e 4 colunas, e as medias individuais foram calculadas corretamente.
+
+TESTE 4 - CONSULTAR ALUNO EM DESTAQUE
+Opcao escolhida: 4
+Notas informadas: 6.5, 9.5, 8, 9.5, 7
+Maior nota esperada: 9.50
+A maior nota aparece nas posicoes 2 e 4. Como a pesquisa atualiza o resultado somente quando encontra uma nota estritamente maior, deve manter a primeira ocorrencia: indice 1 (base zero), posicao 2 (base um).
+
+Resultado exibido:
+Maior nota: 9.50
+Indice encontrado: 1
+Posicao do aluno: 2
+
+Verificacao: aprovado. A maior nota e a primeira posicao em que ela aparece foram identificadas corretamente.
+
+TESTE 5 - ENCERRAMENTO
+Opcao escolhida: 0
+
+Resultado exibido:
+Sistema encerrado!
+
+Verificacao: aprovado. O laco do-while foi encerrado apos a escolha da opcao 0.
+
+RESUMO
+Opcao 1 - Cadastro de alunos: APROVADO
+Opcao 2 - Estatisticas de desempenho: APROVADO
+Opcao 3 - Matriz de notas: APROVADO
+Opcao 4 - Consulta de maior nota: APROVADO
+Opcao 0 - Encerramento: APROVADO
