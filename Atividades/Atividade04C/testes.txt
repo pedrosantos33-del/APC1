@@ -1,0 +1,180 @@
+
+TESTES - SISTEMA DE CADASTRO DE TURMAS
+========================================
+
+TESTE 1 - CADASTRO DE TRES ALUNOS
+----------------------------------------
+
+ENTRADAS:
+
+1 - Escolher a opcao Cadastrar aluno
+1001 - Matricula
+Ana Clara - Nome
+8 - Nota A1
+9 - Nota A2
+
+1 - Escolher novamente Cadastrar aluno
+1002 - Matricula
+Pedro Silva - Nome
+4 - Nota A1
+4 - Nota A2
+
+1 - Escolher novamente Cadastrar aluno
+1003 - Matricula
+Lucas Souza - Nome
+2 - Nota A1
+2 - Nota A2
+
+0 - Sair do programa
+
+SAIDA ESPERADA:
+
+Aluno cadastrado com sucesso!
+Aluno cadastrado com sucesso!
+Aluno cadastrado com sucesso!
+Encerrando o programa!
+
+
+TESTE 2 - LISTAGEM DE ALUNOS
+----------------------------------------
+
+ENTRADAS:
+
+1 - Cadastrar aluno
+1001 - Matricula
+Ana Clara - Nome
+8 - Nota A1
+9 - Nota A2
+
+1 - Cadastrar aluno
+1002 - Matricula
+Pedro Silva - Nome
+4 - Nota A1
+4 - Nota A2
+
+1 - Cadastrar aluno
+1003 - Matricula
+Lucas Souza - Nome
+2 - Nota A1
+2 - Nota A2
+
+2 - Escolher a opcao Listar alunos
+0 - Sair do programa
+
+SAIDA ESPERADA:
+
+MATRICULA | NOME | A1 | A2 | MEDIA | STATUS
+
+1001 | Ana Clara | 8.00 | 9.00 | 8.60 | APROVADO
+1002 | Pedro Silva | 4.00 | 4.00 | 4.00 | RECUPERACAO
+1003 | Lucas Souza | 2.00 | 2.00 | 2.00 | REPROVADO
+
+
+TESTE 3 - BUSCA POR MATRICULA
+----------------------------------------
+
+ENTRADAS:
+
+1 - Cadastrar aluno
+1001 - Matricula
+Ana Clara - Nome
+8 - Nota A1
+9 - Nota A2
+
+1 - Cadastrar aluno
+1002 - Matricula
+Pedro Silva - Nome
+4 - Nota A1
+4 - Nota A2
+
+1 - Cadastrar aluno
+1003 - Matricula
+Lucas Souza - Nome
+2 - Nota A1
+2 - Nota A2
+
+3 - Escolher a opcao Buscar por matricula
+1002 - Matricula pesquisada
+0 - Sair do programa
+
+SAIDA ESPERADA:
+
+Aluno encontrado!
+Matricula: 1002
+Nome: Pedro Silva
+A1: 4.00
+A2: 4.00
+Media: 4.00
+Status: RECUPERACAO
+
+
+TESTE 4 - BUSCA POR TRECHO DO NOME
+----------------------------------------
+
+ENTRADAS:
+
+1 - Cadastrar aluno
+1001 - Matricula
+Ana Clara - Nome
+8 - Nota A1
+9 - Nota A2
+
+1 - Cadastrar aluno
+1002 - Matricula
+Pedro Silva - Nome
+4 - Nota A1
+4 - Nota A2
+
+1 - Cadastrar aluno
+1003 - Matricula
+Lucas Souza - Nome
+2 - Nota A1
+2 - Nota A2
+
+4 - Escolher a opcao Buscar por trecho do nome
+Lucas - Trecho do nome pesquisado
+0 - Sair do programa
+
+SAIDA ESPERADA:
+
+Matricula: 1003
+Nome: Lucas Souza
+A1: 2.00
+A2: 2.00
+Media: 2.00
+Status: REPROVADO
+
+
+TESTE 5 - ESTATISTICAS DA TURMA
+----------------------------------------
+
+ENTRADAS:
+
+1 - Cadastrar aluno
+1001 - Matricula
+Ana Clara - Nome
+8 - Nota A1
+9 - Nota A2
+
+1 - Cadastrar aluno
+1002 - Matricula
+Pedro Silva - Nome
+4 - Nota A1
+4 - Nota A2
+
+1 - Cadastrar aluno
+1003 - Matricula
+Lucas Souza - Nome
+2 - Nota A1
+2 - Nota A2
+
+5 - Escolher a opcao Estatisticas
+0 - Sair do programa
+
+SAIDA ESPERADA:
+
+===== ESTATISTICAS =====
+Reprovados: 1
+Recuperacao: 1
+Aprovados: 1
+Media geral da turma: 4.87
